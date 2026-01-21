@@ -7,6 +7,7 @@ import pandas as pd
 df = pd.read_csv('df_final_cleaned.csv') # Загружаем сохраненный файл
 
 app = dash.Dash(__name__)
+server = app.server
 
 app.layout = html.Div([
     html.H1("Global Tourism Impact Dashboard", style={'textAlign': 'center'}),
